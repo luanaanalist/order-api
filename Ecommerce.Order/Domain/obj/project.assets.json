@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\obj\\",
+      "outputPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

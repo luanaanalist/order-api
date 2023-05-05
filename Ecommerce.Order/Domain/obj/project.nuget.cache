@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WdymTBpxpADsrjE9gz2EvW6bPQSxXC871jUSn2YbNLvTecl/MFuDkSXfiNgWDidgJK46bn8KyX7SBOmmeu7ygg==",
+  "dgSpecHash": "Qa8Suwkani3HW+wiuA1dDWZV/Lu33GFf9rxjYGBOMeOhDGMZ3vDdany57WwU2aiguCy1ba+N/x7ao2irPiwNeg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

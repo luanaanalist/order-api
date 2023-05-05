@@ -3775,11 +3775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order.API.csproj",
+      "projectUniqueName": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order.API.csproj",
       "projectName": "Ecommerce.Order.API",
-      "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order.API.csproj",
+      "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order.API.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Ecommerce.Order\\obj\\",
+      "outputPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Ecommerce.Order\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3799,14 +3799,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj"
+            "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj"
             },
-            "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Infraestrutura.Common\\Infraestrutura.csproj": {
-              "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Infraestrutura.Common\\Infraestrutura.csproj"
+            "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Infraestrutura.Common\\Infraestrutura.csproj": {
+              "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Infraestrutura.Common\\Infraestrutura.csproj"
             },
-            "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Services\\Services.csproj": {
-              "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Services\\Services.csproj"
+            "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Services\\Services.csproj": {
+              "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Services\\Services.csproj"
             }
           }
         }

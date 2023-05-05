@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jN7ifhNt8EDUYy/boM2FE9kXnliN9stCeb0RviwRICFy66LqzvzwgvnXXmCSZ9juvU72OD6ycH0V1A8li1i1cQ==",
+  "dgSpecHash": "k2B95AOBDSqdS5H+u6kgp60Nt6DcNX2Ac6gt5EyOYfVpkr1qCFioNyuJStbwzY4iUoeOxXjd6i+Gb6IRdhR6gw==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Data\\Repository.csproj",
+  "projectFilePath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Data\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

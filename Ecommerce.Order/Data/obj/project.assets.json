@@ -3052,11 +3052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Data\\Repository.csproj",
+      "projectUniqueName": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Data\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Data\\Repository.csproj",
+      "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Data\\Repository.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Data\\obj\\",
+      "outputPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3076,8 +3076,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Projetos\\Ecommerce.Order\\Ecommerce.Order\\Domain\\Domain.csproj"
+            "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projetos\\luanaanalist\\order-api\\Ecommerce.Order\\Domain\\Domain.csproj"
             }
           }
         }
