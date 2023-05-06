@@ -14,25 +14,23 @@ namespace Data.Repository
         }
 
 
-
-
         public virtual async Task<T> Create(T value)
         {
             T? response = default(T);
 
-            if (value != null)
-            {
+           // if (value != null)
+            //{
                 value.Create_Date = DateTime.Now;
                 var responseAdd = await _context.Set<T>().AddAsync(value);
 
                 await _context.SaveChangesAsync();
 
                 response = responseAdd.Entity;
-            }
-            else
-            {
-                throw new ArgumentNullException("value");
-            }
+            //}
+            //else
+            //{
+               // throw new ArgumentNullException("value");
+            //}
 
             return response;
         }
@@ -43,8 +41,8 @@ namespace Data.Repository
         {
             IList<T>? response = new List<T>();
 
-            if (value != null)
-            {
+            //if (value != null)
+            //{
                 foreach (var item in value)
                 {
                     item.Create_Date = DateTime.Now;
@@ -53,44 +51,44 @@ namespace Data.Repository
                 }
 
                 await _context.SaveChangesAsync();
-            }
-            else
-            {
-                throw new ArgumentNullException("value");
-            }
+            //}
+            //else
+            //{
+                //throw new ArgumentNullException("value");
+            //}
 
             return response;
         }
 
         public virtual async Task UpdateBatch(IList<T> values)
         {
-            if (values != null)
-            {
+            //if (values != null)
+            //{
                 _context.Set<T>().UpdateRange(values);
                 await _context.SaveChangesAsync();
-            }
-            else
-            {
+            //}
+           // else
+            //{
                 throw new ArgumentNullException("values");
-            }
+            //}
         }
 
         public virtual async Task<T> Update(T value)
         {
             T? response = default(T);
 
-            if (value != null)
-            {
+            //if (value != null)
+            //{
                 var responseUpdate = _context.Set<T>().Update(value); 
 
                 await _context.SaveChangesAsync();
 
                 response = responseUpdate.Entity;
-            }
-            else
-            {
-                throw new ArgumentNullException("value");
-            }
+            //}
+            //else
+            //{
+                //throw new ArgumentNullException("value");
+            //}
 
             return response;
         }
@@ -98,18 +96,18 @@ namespace Data.Repository
 
         public virtual async Task Delete(int id)
         {
-            if (id > 0)
-            {
+            //if (id > 0)
+            //{
                 T? deleteObject = default(T);
                 deleteObject.Id = id;
                 _context.Set<T>().Remove(deleteObject);
 
                 await _context.SaveChangesAsync();
-            }
-            else
-            {
-                throw new ArgumentNullException("value");
-            }
+           // }
+            //else
+            //{
+                //throw new ArgumentNullException("value");
+            //}
         }
 
         public virtual async Task Delete(T entiy)
@@ -132,7 +130,7 @@ namespace Data.Repository
 
         public IList<T> GetByFunc(Func<T, bool> filter)
         {
-            if (filter == null) throw new ArgumentNullException(nameof(filter));
+           // if (filter == null) throw new ArgumentNullException(nameof(filter));
 
             return _context.Set<T>().Where(filter).ToList();
         }

@@ -25,8 +25,8 @@ namespace Ecommerce.Order.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        [Route("GetById/{id}")]
+        [HttpGet("GetById/{id}")]
+        //[Route("GetById/{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
             var response = _categoriaService.GetById(id);
