@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{79B0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{E8298FA3-7857-4DAD-8772-5392812F0612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestrutura", "Infraestrutura.Common\Infraestrutura.csproj", "{D9BAABFC-2CD8-4F18-BB3A-66FFE9C9D9CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestrutura", "Infraestrutura.Common\Infraestrutura.csproj", "{D9BAABFC-2CD8-4F18-BB3A-66FFE9C9D9CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestrutura", "Infraestrutura", "{1CC8841B-F076-4F68-853A-5091EB81BA6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,7 @@ Global
 		{4B1010D9-44E5-40A6-929A-9F1638E2F0B3} = {8A9E0B0A-831C-4472-A70C-1B8AA1F8AC52}
 		{6BE54532-9751-4896-8772-3411187F7A58} = {0158D750-9406-425A-AB45-7AD7D5A370EA}
 		{E8298FA3-7857-4DAD-8772-5392812F0612} = {79B054A0-A887-4171-8325-B1CC952A92D9}
+		{D9BAABFC-2CD8-4F18-BB3A-66FFE9C9D9CC} = {1CC8841B-F076-4F68-853A-5091EB81BA6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF95AA4B-7A7D-45E9-B0D3-8636B287E830}
