@@ -24,10 +24,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
-//}, ServiceLifetime.Scoped);
 
 IConfigurationRoot Configuration = new ConfigurationBuilder()
             .SetBasePath(Environment.CurrentDirectory)
