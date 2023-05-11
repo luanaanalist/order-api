@@ -22,5 +22,6 @@ namespace Data.Context
         public virtual DbSet<Domain.Entities.Item_Pedido> Item_Pedido { get; set; }
 
 
+
     }
 }

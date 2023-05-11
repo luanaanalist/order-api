@@ -11,13 +11,14 @@ namespace Domain.IRepository
     public interface ICategoriaRepository : ICommonRepository<Categoria>
     {
 
-        //void Incluir(Categoria categoria);
+        void Incluir(Categoria categoria);
+        Task<bool> SaveAllAsync();
         //void Alterar(Categoria categoria);
         //void Excluir(Categoria categoria);
         //Task<Categoria> SelecionarByPK(int id);
         //Task<IEnumerable<Categoria>> SelecionarTodos();
-        //Task<bool> SaveAllAsync();
+
         //Task<CategoriaDTO> GetById(int id);
-        
+
     }
 }

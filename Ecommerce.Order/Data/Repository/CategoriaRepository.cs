@@ -16,10 +16,10 @@ namespace Data.Repository
 
         public CategoriaRepository(AppDbContext appDbContext) : base(appDbContext) { }
 
-        //public void Incluir(Categoria categoria)
-        //{
-        //    _context.Categoria.Add(categoria);
-        //}
+        public void Incluir(Categoria categoria)
+        {
+            _context.Categoria.Add(categoria);
+        }
 
         //public void Alterar(Categoria categoria)
         //{
@@ -56,11 +56,11 @@ namespace Data.Repository
 
         //}
 
-        //public async Task<bool> SaveAllAsync()
-        //{
-        //    return await _context.SaveChangesAsync() > 0;
+        public async Task<bool> SaveAllAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
 
-        //}
+        }
 
     }
 }

@@ -24,7 +24,7 @@ namespace Domain.Entities
      
         public int Forma_Pagamento { get; set; }
 
-        public ICollection<Item_Pedido> Pedidos { get; set; }
+        public virtual ICollection<Item_Pedido> Pedidos { get; set; }
 
         
     }

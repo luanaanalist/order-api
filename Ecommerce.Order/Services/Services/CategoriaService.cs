@@ -38,13 +38,13 @@ namespace Services.Services
 
         }
 
-        //public async Task<bool> Incluir(Categoria categoria)
-        //{
-        //    this._categoriaRepository.Incluir(categoria);
-        //    if(await _categoriaRepository.SaveAllAsync())
-        //        return true;
-        //    return false;
-        //}
+        public async Task<bool> Incluir(Categoria categoria)
+        {
+            this._categoriaRepository.Incluir(categoria);
+            if (await _categoriaRepository.SaveAllAsync())
+                return true;
+            return false;
+        }
 
         //public async Task<bool> Update(Categoria categoria)
         //{

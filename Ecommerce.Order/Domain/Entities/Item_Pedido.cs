@@ -27,8 +27,6 @@ namespace Domain.Entities
         [ForeignKey("Id_Pedido")]
         public virtual Pedido Pedido { get; set; }
 
-
-
         public int Id_Produto { get; set; }
 
         [ForeignKey("Id_Produto")]

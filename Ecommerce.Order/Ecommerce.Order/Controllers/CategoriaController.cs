@@ -33,17 +33,17 @@ namespace Ecommerce.Order.Controllers
             return Ok(response);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> CadastrarCategoria(Categoria categoria)
-        //{
-        //    var result = await this._categoriaService.Incluir(categoria);
-        //    if(result)
-        //        return Ok("Categoria incluida com sucesso");
+        [HttpPost]
+        public async Task<IActionResult> CadastrarCategoria(Categoria categoria)
+        {
+            var result = await this._categoriaService.Incluir(categoria);
+            if (result)
+                return Ok("Categoria incluida com sucesso");
 
 
-        //    return BadRequest("ocorreu um erro ao salvar a categoria");
+            return BadRequest("ocorreu um erro ao salvar a categoria");
 
-        //}
+        }
 
         //[HttpPut]
         //public async Task<IActionResult> UpdateCategoria(Categoria categoria)

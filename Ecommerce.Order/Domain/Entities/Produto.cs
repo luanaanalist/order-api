@@ -34,9 +34,9 @@ namespace Domain.Entities
         public int Id_Categoria { get; set; }
 
         [ForeignKey("Id_Categoria")]
-        public Categoria Categoria { get; set; }
+        public virtual Categoria Categoria { get; set; }
 
-        public ICollection<Item_Pedido> Produtos { get; set; }
+        public virtual ICollection<Item_Pedido> Produtos { get; set; }
 
         
     }

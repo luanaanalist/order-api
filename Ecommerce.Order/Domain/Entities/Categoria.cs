@@ -13,6 +13,7 @@ namespace Domain.Entities
     public class Categoria: BaseEntity
     {
         [Key]
+        
         [Column("Id")]
         public override int Id { get; set; }
 
@@ -20,7 +21,7 @@ namespace Domain.Entities
         [MaxLength(200)]    
         public string Descricao { get; set; }
 
-        public ICollection<Produto> Produtos { get; set; }
+        public virtual ICollection<Produto> ? Produtos { get; set; }
 
         
     }
