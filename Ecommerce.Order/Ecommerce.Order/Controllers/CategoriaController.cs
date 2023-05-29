@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Ecommerce.Order.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
 using System.Net.Mime;
@@ -7,7 +8,7 @@ namespace Ecommerce.Order.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CategoriaController : Controller
+    public class CategoriaController : BaseController
     {
         private readonly ICategoriaService _categoriaService;
 
@@ -19,8 +20,17 @@ namespace Ecommerce.Order.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var response = this._categoriaService.GetAll();
-            return Ok(response);
+            try
+            {
+                var response = this._categoriaService.GetAll();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar recuperar as categorias", ex);
+            }
+            
 
         }
 
@@ -29,8 +39,18 @@ namespace Ecommerce.Order.Controllers
         //[Route("GetById/{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
-            var response = _categoriaService.GetById(id);
-            return Ok(response);
+            try
+            {
+                var response = _categoriaService.GetById(id);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar obter a Categoria.", ex);
+                return null;
+            }
+            
         }
 
         [HttpPost]
