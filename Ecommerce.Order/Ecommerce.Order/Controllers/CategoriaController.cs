@@ -6,7 +6,7 @@ using System.Net.Mime;
 
 namespace Ecommerce.Order.Controllers
 {
-    [ApiController]
+    //[ApiController]
     [Route("api/[controller]")]
     public class CategoriaController : BaseController
     {
@@ -56,14 +56,34 @@ namespace Ecommerce.Order.Controllers
         [HttpPost]
         public async Task<IActionResult> CadastrarCategoria(Categoria categoria)
         {
-            var result = await this._categoriaService.Incluir(categoria);
-            if (result)
-                return Ok("Categoria incluida com sucesso");
+            try
+            {
+                var result = await this._categoriaService.Incluir(categoria);
+                if (result)
+                    return Ok("Categoria incluida com sucesso");
+                else
+                    return BadRequest("ocorreu um erro ao salvar a categoria");
+            }
+            catch (Exception ex)
+            {
 
+                return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar incluir uma Categoria.", ex);
 
-            return BadRequest("ocorreu um erro ao salvar a categoria");
+            }
 
         }
+
+        //[HttpPost]
+        //public async Task<IActionResult> CadastrarCategoria(Categoria categoria)
+        //{
+        //    var result = await this._categoriaService.Incluir(categoria);
+        //    if (result)
+        //        return Ok("Categoria incluida com sucesso");
+
+
+        //    return BadRequest("ocorreu um erro ao salvar a categoria");
+
+        //}
 
         //[HttpPut]
         //public async Task<IActionResult> UpdateCategoria(Categoria categoria)

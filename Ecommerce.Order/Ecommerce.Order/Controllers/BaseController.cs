@@ -6,6 +6,7 @@ using System.Net;
 
 namespace Ecommerce.Order.API.Controllers
 {
+
         public class BaseController : Controller
         {
             public BadRequestObjectResult BadRequest(string mensagemErro)
