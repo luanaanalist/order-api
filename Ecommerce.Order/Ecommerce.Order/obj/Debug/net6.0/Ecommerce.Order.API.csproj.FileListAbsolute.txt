@@ -191,3 +191,6 @@ C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\obj\Debug\net
 C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\obj\Debug\net6.0\Ecommerce.Order.API.csproj.CopyComplete
 C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\obj\Debug\net6.0\Ecommerce.Order.API.genruntimeconfig.cache
 C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\obj\Debug\net6.0\ref\Ecommerce.Order.API.dll
+C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Projetos\luanaanalist\order-api\Ecommerce.Order\Ecommerce.Order\bin\Debug\net6.0\Newtonsoft.Json.dll

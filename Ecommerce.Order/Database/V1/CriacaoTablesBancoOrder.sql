@@ -48,5 +48,12 @@ REFERENCES Pedido (Id)
 Go
 
 
+insert into [dbo].[Categoria] (Descricao, Create_Date, Update_date) values('Higiene Pessoal', GETDATE(), Getdate())
 
+
+
+drop table Item_Pedido
+drop table Produto
+drop table Categoria
+drop table pedido
 
