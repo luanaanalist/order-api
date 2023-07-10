@@ -30,7 +30,7 @@ namespace Ecommerce.Order.Controllers
 
                 return TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar recuperar as categorias", ex);
             }
-            
+
 
         }
 
@@ -50,7 +50,7 @@ namespace Ecommerce.Order.Controllers
                 TratarExcecao(ControllerContext, "Ocorreu um erro ao tentar obter a Categoria.", ex);
                 return null;
             }
-            
+
         }
 
         [HttpPost]
@@ -85,29 +85,30 @@ namespace Ecommerce.Order.Controllers
 
         //}
 
-        //[HttpPut]
-        //public async Task<IActionResult> UpdateCategoria(Categoria categoria)
-        //{
-        //    var result = await this._categoriaService.Update(categoria);
-        //    if (result)
-        //        return Ok("Categoria alterada com sucesso");
+        [HttpPut]
+        public async Task<IActionResult> UpdateCategoria(Categoria categoria)
+        {
+            var result = await this._categoriaService.Update(categoria);
+            if (result)
+                return Ok("Categoria alterada com sucesso");
 
 
-        //    return BadRequest("ocorreu um erro ao alterar a categoria");
+            return BadRequest("ocorreu um erro ao alterar a categoria");
 
-        //}
+        }
 
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> Excluir(int id)
-        //{
-        //    var result = await this._categoriaService.Excluir(id);
-        //    if (result)
-        //        return Ok("Categoria excluida com sucesso");
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Excluir(int id)
+        {
+            var result = await this._categoriaService.Excluir(id);
+            if (result)
+                return Ok("Categoria excluida com sucesso");
 
 
-        //    return BadRequest("ocorreu um erro ao excluir a categoria");
+            return BadRequest("ocorreu um erro ao excluir a categoria");
 
-        //}
+            //}
 
+        }
     }
 }

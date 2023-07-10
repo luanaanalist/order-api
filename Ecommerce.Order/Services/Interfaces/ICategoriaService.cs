@@ -13,8 +13,8 @@ namespace Services.Interfaces
     public interface ICategoriaService
     {
         Task<bool> Incluir(Categoria categoria);
-        //Task<bool> Update(Categoria categoria);
-        //Task<bool> Excluir(int id);
+        Task<bool> Update(Categoria categoria);
+        Task<bool> Excluir(int id);
         IEnumerable<CategoriaDTO> GetAll();
         Categoria GetById(int idCategoria);
 

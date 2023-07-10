@@ -32,9 +32,11 @@ namespace Services.Services
 
         public Categoria GetById(int idCategoria)
         {
-            var categoria = _categoriaRepository.GetById(idCategoria);
+            var categoriaDTO = _categoriaRepository.GetById(idCategoria);
+
+            var categoria = _mapper.Map<Categoria>(categoriaDTO);
             return categoria;
-            
+             
 
         }
 
@@ -46,32 +48,32 @@ namespace Services.Services
             return false;
         }
 
-        //public async Task<bool> Update(Categoria categoria)
-        //{
-        //    this._categoriaRepository.Alterar(categoria);
-        //    if (await _categoriaRepository.SaveAllAsync())
-        //        return true;
-        //    return false;
-        //}
+        public async Task<bool> Update(Categoria categoria)
+        {
+            this._categoriaRepository.Alterar(categoria);
+            if (await _categoriaRepository.SaveAllAsync())
+                return true;
+            return false;
+        }
 
-        //public async Task<bool> Excluir(int id)
-        //{
-        //    var categoria = await this._categoriaRepository.SelecionarByPK(id);
-        //    if (categoria == null) 
-        //    {
-        //        throw new ArgumentException("categoria nao encontrada");
-        //    }
-        //    this._categoriaRepository.Excluir(categoria);
-        //    if (await _categoriaRepository.SaveAllAsync())
-        //        return true;
-        //    return false;
-        //}
+        public async Task<bool> Excluir(int id)
+        {
+            var categoria = await this._categoriaRepository.SelecionarByPK(id);
+            if (categoria == null)
+            {
+                throw new ArgumentException("categoria nao encontrada");
+            }
+            this._categoriaRepository.Excluir(categoria);
+            if (await _categoriaRepository.SaveAllAsync())
+                return true;
+            return false;
+        }
 
-        //public async Task<IEnumerable<Categoria>> SelecionarTodos()
-        //{
-        //    var categoria = await this._categoriaRepository.SelecionarTodos();
-        //    return categoria;
-        //}
+        public async Task<IEnumerable<Categoria>> SelecionarTodos()
+        {
+            var categoria = await this._categoriaRepository.SelecionarTodos();
+            return categoria;
+        }
 
 
         //public async Task<CategoriaVM> GetById(int idCategoria)

@@ -13,12 +13,12 @@ namespace Domain.IRepository
 
         void Incluir(Categoria categoria);
         Task<bool> SaveAllAsync();
-        //void Alterar(Categoria categoria);
-        //void Excluir(Categoria categoria);
-        //Task<Categoria> SelecionarByPK(int id);
-        //Task<IEnumerable<Categoria>> SelecionarTodos();
+        void Alterar(Categoria categoria);
+        void Excluir(Categoria categoria);
+        Task<Categoria> SelecionarByPK(int id);
+        Task<IEnumerable<Categoria>> SelecionarTodos();
 
-        //Task<CategoriaDTO> GetById(int id);
+        Task<CategoriaDTO> GetById(int id);
 
     }
 }
